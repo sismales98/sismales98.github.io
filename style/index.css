@@ -417,11 +417,50 @@ footer{
             justify-content: space-between;
             
         }  
-    
+     
     
 }
 
+@media screen and (min-width:533px){
+    header{
+       height: 100%;
+    }
 
+    .card-pop{
+        width: 321px !important;
+        height: 359px;
+    }
+    .card-pop:hover{
+        width: 326px;
+        height: 364px;
+    }
+    .card{
+        width: 300px;
+    }
+    .container-card-pop{
+        justify-content: center;
+    }
+}
+@media screen and (min-width:1000px){
+    header{
+       height: 64vh;
+    }  
+    .card-pop{
+        width: 250px;
+        height: 200px;
+    }
+    .card-pop:hover{
+        width: 255px;
+        height: 205px;
+    }
+    .card{
+        width: 250px;
+    }
+    .container-card-pop{
+        justify-content: space-evenly;
+    }
+
+}
 .input-name label{
     color: #fe7e00;
 }
