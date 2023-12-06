@@ -412,20 +412,13 @@ footer{
 @media (min-width: 300px) {
     /* … */
     .card-pop{
-        width: 300px;
+        width: 275px;
     }
   }
-@media (min-width: 650px) {
-    /* … */
-    .card-pop{
-        width: 300px;
-    }
-  }
+
 @media (min-width: 930px) {
     /* … */
-    .card-pop{
-        width: 200px;
-    }
+   
     header{
         height: 100%;
         padding:40px;
