@@ -384,7 +384,7 @@ footer{
 .card-pop:hover{
     filter: drop-shadow(2px 4px 6px black);
     background-color:#fe7e00 !important;
-    width: 170px;
+    width: 210px;
     height: 145px;
 }
 
@@ -413,6 +413,11 @@ footer{
     /* … */
     .card-pop{
         width: 275px;
+        height: 300px;
+    }
+    .card-pop:hover{
+        width: 280px;
+        height: 305px;
     }
   }
 
@@ -431,6 +436,9 @@ footer{
     }  
     .card-pop{
         width: 200px;
+    }
+    .card-pop:hover{
+        width: 205px;
     }
     .container-card-pop{
         justify-content: space-evenly;
