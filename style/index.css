@@ -376,8 +376,8 @@ footer{
 .card-pop{
     filter: drop-shadow(2px 4px 6px black);
     background-color: #272a2f;
-    width: 160px;
-    height: 140px;
+    width: 180px;
+    height: 250px;
     margin: 10px;
 }
 
@@ -409,52 +409,35 @@ footer{
     justify-content: space-evenly;
     align-items: center;
 }
-
-@media screen and (max-width:767px) {
-    
-        .container-card-pop{
-          
-            justify-content: space-between;
-            
-        }  
-     
-    
-}
-
-@media screen and (min-width:533px){
-    header{
-       height: 100%;
-    }
-
+@media (min-width: 300px) {
+    /* … */
     .card-pop{
-        width: 321px !important;
-        height: 359px;
-    }
-    .card-pop:hover{
-        width: 326px;
-        height: 364px;
-    }
-    .card{
         width: 300px;
     }
-    .container-card-pop{
-        justify-content: center;
+  }
+@media (min-width: 650px) {
+    /* … */
+    .card-pop{
+        width: 300px;
     }
-}
-@media screen and (min-width:1000px){
+  }
+@media (min-width: 930px) {
+    /* … */
+    .card-pop{
+        width: 200px;
+    }
     header{
-       height: 64vh;
+        height: 100%;
+        padding:40px;
+    };
+  }
+ 
+@media (min-width:1000px){
+    header{
+       height: 85vh;
     }  
     .card-pop{
-        width: 250px;
-        height: 200px;
-    }
-    .card-pop:hover{
-        width: 255px;
-        height: 205px;
-    }
-    .card{
-        width: 250px;
+        width: 200px;
     }
     .container-card-pop{
         justify-content: space-evenly;
