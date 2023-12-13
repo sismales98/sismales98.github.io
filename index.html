@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
@@ -115,140 +116,218 @@
                     
                     <ul class="navbar-nav card-list">
                         <li class="nav-item">
-                        <div class="card">
+                        <div class="card" id="card-vuelo" onmouseover="showImages()" onmouseout="hideImages()">
+                            <div class="w3-content w3-display-container image-list" id="image-List">
+                                <img class="mySlides" src="style/img/vuelo/img-v1.JPG" style="width:100%">
+                                <img class="mySlides" src="style/img/vuelo/img-v2.JPG" style="width:100%">
+                                <img class="mySlides" src="style/img/vuelo/img-v3.JPG" style="width:100%">
+                                <img class="mySlides" src="style/img/vuelo/img-v4.JPG" style="width:100%">
+                              
+                                <button class="button-slider-img w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                                <button class="button-slider-img w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                              </div>
+                            <!-- <div class="image-list" id="image-List">
+                                <img src="style/img/vuelo/img-v1.JPG" alt="Imagen 1">
+                                <img src="style/img/vuelo/img-v2.JPG" alt="Imagen 2">
+                                <img src="style/img/vuelo/img-v3.JPG" alt="Imagen 3">
+                                <img src="style/img/vuelo/img-v4.JPG" alt="Imagen 4">
+                              </div> -->
+                              <div id="card-cont-vuelo" class="card-cont"> 
                                 <h3>Vuelo</h3>
-                                <div class="circle">
+                                <div class="circle" id="circle-vuelo">
                                     <span><i class="fa fa-plane"></i></span>
-                                </div>
-                                <div class="content-card">
-                                    <span>incluye:</span>
-                                    <p>aqui solo hablo popo asdafasfasdas asasdasdsadsadasdasfsafsafawfasfasf</p>
+                                </div>  
+                               
+                                <div style="display: flex;
+                                align-content: center;
+                                flex-direction: column;
+                                align-items: center;">
+                                    <div class="content-card" id="content-card-vuelo">
+                                        <span>incluye:</span>
+                                        <p>aqui solo hablo popo asdafasfasdas asasdasdsadsadasdasfsafsafawfasfasf</p>
+                                       
+                                    </div>
                                     <h4>180</h4>
+                                    <button onclick="openContainer()" class="btn btn-card btn-orange"  type="button">RESERVA</button>
+    
                                 </div>
-                                <button onclick="openContainer()" class="btn btn-card btn-orange" type="button">RESERVA</button>
+                              
+
+                              </div>
+                               
                         </div>
                         
                         </li>
                         <li class="nav-item">
-                        <div class="card">
-                                <h3>Vuelo Extremo</h3>
-                                <div class="circle">
-                                    <i class="fa fa-fire"></i>
-                                </div>
-                                    <div class="content-card">
-                                        <span>incluye:</span>
-                                        <p>asdasdasdasdasfasasfas asdasdasdadssad asdasfas asdas dasdasdasfasasfas</p>
-                                        <h4>+50</h4>
-                                        
-                                    
+                            <div class="card" id="card-extremo" onmouseover="showImagesExtremo()" onmouseout="hideImagesExtremo()">
+                                <div class="image-list" id="image-List-extremo">
+                                    <video width="350" height="440" alt="Imagen 1" autoplay muted loop>
+                                        <source   src="style/img/extremo/Video-360.mp4" type="video/mp4">
+                                    </video>
+                                  </div>
+                                  <div id="card-cont-extremo" class="card-cont"> 
+                                    <h3>Vuelo Extremo</h3>
+                                    <div class="circle" id="circle-extremo">
+                                        <span><i class="fa fa-plane"></i></span>
+                                    </div>  
                                    
-                                </div>
-                                <button onclick="openContainer()" class="btn btn-card btn-orange" type="button">RESERVA</button>
-                        </div>
-                        
+                                    <div style="display: flex;
+                                    align-content: center;
+                                    flex-direction: column;
+                                    align-items: center;">
+                                        <div class="content-card" id="content-card-extremo">
+                                            <span>incluye:</span>
+                                            <p>aqui solo hablo popo asdafasfasdas asasdasdsadsadasdasfsafsafawfasfasf</p>
+                                           
+                                        </div>
+                                        <h4>180</h4>
+                                        <button onclick="openContainer()" class="btn btn-card btn-orange"  type="button">RESERVA</button>
+        
+                                    </div>
+                                  
+    
+                                  </div>
+                                   
+                                   
+                            </div>
                         </li>
                     </ul>    
                 </div>
                 <div class="table-add">
                     <ul class="navbar-nav card-list">
                         <li class="nav-item">
-                        <div class="card">
-                                <h3>Fotos 360°</h3>
-                                <div class="circle">
-                                    <span><i class="fa fa-image"></i></span>
-                                </div>
-                                <div class="content-card">
-                                    <span>incluye:</span>
-                                    <p>aqui solo hablo popo asdafasfasdas asasdasdsadsadasdasfsafsafawfasfasf</p>
-                                    <h4>+40</h4>
-                                </div>
-                                <button onclick="openContainer()" class="btn btn-card btn-orange" type="button">RESERVA</button>
-                        </div>
-                        
-                        </li>
-                        <li class="nav-item">
-                        <div class="card">
-                                <h3>Celebraciones</h3>
-                                <div class="circle">
-                                    <i class="fa fa-gift"></i>
-                                </div>
-                                    <div class="content-card">
-                                        <span>incluye:</span>
-                                        <p>asdasdasdasdasfasasfas asdasdasdadssad asdasfas asdas dasdasdasfasasfas</p>
-                                        <h4>+40</h4>
-                                    </div>
-                                <button onclick="openContainer()" class="btn btn-card btn-orange" type="button">RESERVA</button>
-                        </div>
-                        
-                        </li>
-                        <li class="nav-item">
-                            <div class="card">
-                                    <h3>Letreros</h3>
-                                    <div class="circle">
-                                        <i class="fa fa-table"></i>
-                                    </div>
-                                        <div class="content-card">
+                            <div class="card" id="card-vuelo-360" onmouseover="showImages360()" onmouseout="hideImages360()">
+                                <div class="w3-content w3-display-container image-list" id="image-List-360">
+                                    <video class="mySlidesExtremo" width="250" height="440" alt="Imagen 1" autoplay muted loop>
+                                        <source   src="style/img/360/Video-360-1.mp4" type="video/mp4">
+                                    </video>
+                                    <img class="mySlidesExtremo" src="style/img/360/img-360-1.jpg" style="width:100%">
+                                    <img class="mySlidesExtremo" src="style/img/360/img-360-2.jpg" style="width:100%">
+                                    <img class="mySlidesExtremo" src="style/img/360/img-360-3.jpg" style="width:100%">
+                                  
+                                    <button class="button-slider-img w3-button w3-display-left" onclick="plusDivsE(-1)">&#10094;</button>
+                                    <button class="button-slider-img w3-button w3-display-right" onclick="plusDivsE(1)">&#10095;</button>
+                                  </div>
+                                <!-- <div class="image-list" id="image-List">
+                                    <img src="style/img/vuelo/img-v1.JPG" alt="Imagen 1">
+                                    <img src="style/img/vuelo/img-v2.JPG" alt="Imagen 2">
+                                    <img src="style/img/vuelo/img-v3.JPG" alt="Imagen 3">
+                                    <img src="style/img/vuelo/img-v4.JPG" alt="Imagen 4">
+                                  </div> -->
+                                  <div id="card-cont-360" class="card-cont"> 
+                                    <h3>Registro 360</h3>
+                                    <div class="circle" id="circle-360">
+                                        <span><i class="fa fa-plane"></i></span>
+                                    </div>  
+                                   
+                                    <div style="display: flex;
+                                    align-content: center;
+                                    flex-direction: column;
+                                    align-items: center;">
+                                        <div class="content-card" id="content-card-360">
                                             <span>incluye:</span>
-                                            <p>asdasdasdasdasfasasfas asdasdasdadssad asdasfas asdas dasdasdasfasasfas</p>
-                                            <h4>+40</h4>
+                                            <p>aqui solo hablo popo asdafasfasdas asasdasdsadsadasdasfsafsafawfasfasf</p>
+                                           
                                         </div>
-                                    <button onclick="openContainer()" class="btn btn-card btn-orange" type="button">RESERVA</button>
+                                        <h4>180</h4>
+                                        <button onclick="openContainer()" class="btn btn-card btn-orange"  type="button">RESERVA</button>
+        
+                                    </div>
+                                  
+    
+                                  </div>
+                                   
+                            </div>
+                        
+                        </li>
+                        <li class="nav-item">
+                            <div class="card" id="card-celebracion" onmouseover="showImagesC()" onmouseout="hideImagesC()">
+                                <div class="w3-content w3-display-container image-list" id="image-List-c">
+                                    <img class="mySlidesC" src="style/img/celebration/celebration-1.jpg" style="width:100%">
+                                    <img class="mySlidesC" src="style/img/celebration/celebration-2.webp" style="width:100%">
+                                 
+                                  
+                                    <button class="button-slider-img w3-button w3-display-left" onclick="plusDivsC(-1)">&#10094;</button>
+                                    <button class="button-slider-img w3-button w3-display-right" onclick="plusDivsC(1)">&#10095;</button>
+                                  </div>
+                                <!-- <div class="image-list" id="image-List">
+                                    <img src="style/img/vuelo/img-v1.JPG" alt="Imagen 1">
+                                    <img src="style/img/vuelo/img-v2.JPG" alt="Imagen 2">
+                                    <img src="style/img/vuelo/img-v3.JPG" alt="Imagen 3">
+                                    <img src="style/img/vuelo/img-v4.JPG" alt="Imagen 4">
+                                  </div> -->
+                                  <div id="card-cont-c" class="card-cont"> 
+                                    <h3>Celebraciones</h3>
+                                    <div class="circle" id="circle-c">
+                                        <span><i class="fa fa-plane"></i></span>
+                                    </div>  
+                                   
+                                    <div style="display: flex;
+                                    align-content: center;
+                                    flex-direction: column;
+                                    align-items: center;">
+                                        <div class="content-card" id="content-card-c">
+                                            <span>incluye:</span>
+                                            <p>aqui solo hablo popo asdafasfasdas asasdasdsadsadasdasfsafsafawfasfasf</p>
+                                           
+                                        </div>
+                                        <h4>180</h4>
+                                        <button onclick="openContainer()" class="btn btn-card btn-orange"  type="button">RESERVA</button>
+        
+                                    </div>
+                                  
+    
+                                  </div>
+                                   
+                            </div>
+                        
+                        </li>
+                        <li class="nav-item">
+                            <div class="card" id="card-vuelo-L" onmouseover="showImagesL()" onmouseout="hideImagesL()">
+                                <div class="w3-content w3-display-container image-list" id="image-List-l">
+                                    <img class="mySlidesL" src="style/img/Letrero/letrero-1.jpeg" style="width:100%">
+                                    <img class="mySlidesL" src="style/img/Letrero/letrero-2.webp" style="width:100%">
+                                    <img class="mySlidesL" src="style/img/Letrero/letrero-3.jpg" style="width:100%">
+                                    <img class="mySlidesL" src="style/img/Letrero/letrero-4.webp" style="width:100%">
+                                  
+                                    <button class="button-slider-img w3-button w3-display-left" onclick="plusDivsL(-1)">&#10094;</button>
+                                    <button class="button-slider-img w3-button w3-display-right" onclick="plusDivsL(1)">&#10095;</button>
+                                  </div>
+                                <!-- <div class="image-list" id="image-List">
+                                    <img src="style/img/vuelo/img-v1.JPG" alt="Imagen 1">
+                                    <img src="style/img/vuelo/img-v2.JPG" alt="Imagen 2">
+                                    <img src="style/img/vuelo/img-v3.JPG" alt="Imagen 3">
+                                    <img src="style/img/vuelo/img-v4.JPG" alt="Imagen 4">
+                                  </div> -->
+                                  <div id="card-cont-l" class="card-cont"> 
+                                    <h3>Letreros</h3>
+                                    <div class="circle" id="circle-l">
+                                        <span><i class="fa fa-plane"></i></span>
+                                    </div>  
+                                   
+                                    <div style="display: flex;
+                                    align-content: center;
+                                    flex-direction: column;
+                                    align-items: center;">
+                                        <div class="content-card" id="content-card-l">
+                                            <span>incluye:</span>
+                                            <p>aqui solo hablo popo asdafasfasdas asasdasdsadsadasdasfsafsafawfasfasf</p>
+                                           
+                                        </div>
+                                        <h4>180</h4>
+                                        <button onclick="openContainer()" class="btn btn-card btn-orange"  type="button">RESERVA</button>
+        
+                                    </div>
+                                  
+    
+                                  </div>
+                                   
                             </div>
                             
                             </li>
                     </ul> 
                 </div>
-                <div class="container-pop" id="buy-pop" >
-                        <button type="button" onclick="closePop()" class="btn btn-cancel pop-button" style="color: #ff7f00;">Cerrar</button>
-                        <div class="container-card-pop">
-                            <div class="container container-card">
-                                <div class="card card-pop" id="my-card-comercial">
-                                    <i>Logo</i>
-                                    <h6>Comercial</h6>
-                                    <p>description</p>
-                                </div>
-    
-                                <div class="card card-pop" id="my-card-extrem">
-                                    <i>Logo</i>
-                                    <h6>Extremo</h6>
-                                    <p>description</p>
-                                </div>
-    
-                                <div class="card card-pop " id="my-card-camara">
-                                    <i>Logo</i>
-                                    <h6>Camara 360°</h6>
-                                    <p>description</p>
-                                </div>
-                                
-    
-                                <div class="card card-pop" id="my-card-cumple">
-                                    <i>Logo</i>
-                                    <h6>Cumpleaños</h6>
-                                    <p>description</p>
-                                </div>
-                                <div class="card card-pop" id="my-card-cartel">
-                                    <i>Logo</i>
-                                    <h6>Carteles</h6>
-                                    <p>description</p>
-                                </div>
-                            </div>
-                            <div class="container">
-                                <h3>Selecciona tu paquete dando click sobre las cartas</h3>
-                                <div class="container input-name " style="text-align: center;">
-                                    <label for="lname">Nombre:</label>
-                                    <input type="text" name="lname" id="lname"  required>
-                                </div>
-                                
-                                <h3 id="cont-display">Total : </h3>
-                                <div class="container" style="display: flex;justify-content: center;">
-                                    <button href="#section-buy" onclick="fillField() " class="btn" type="button" style="color: white;background-color: #ff7f00;">Reserva Ya!</button>
-                                </div>
-                            </div>
-                           
-                           
-                        </div>
-                        
-                </div>
+               
                 
             </section>
             <section id="section-about" class="section-about">
@@ -265,6 +344,7 @@
                     <div class="about-decoration">
                         <div class="figure-about-c"></div>
                         <div class="figure-about"></div>
+                        
                         
                     </div>
 
@@ -414,5 +494,10 @@
     <script src="src/controlCard.js">
 
     </script>
+    <script src="src/control-img.js">
+        
+      
+
+        </script>
 </body>
 </html>

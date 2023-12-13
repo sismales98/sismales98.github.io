@@ -1,154 +1,97 @@
-        // Obtener el elemento del card
-        const extrem = document.getElementById("my-card-extrem");
-        const comercial = document.getElementById("my-card-comercial");    
-        const camara = document.getElementById("my-card-camara");
-        const cumple = document.getElementById("my-card-cumple");   
-        const cartel = document.getElementById("my-card-cartel");   
-        const contDisplay = document.getElementById("cont-display");
+let imageContainer = document.getElementById('image-List');
+
+let imageExtremo = document.getElementById('image-List-extremo');
+let imageCamara = document.getElementById('image-List-360');
+let imageC = document.getElementById('image-List-c');
+let imageL = document.getElementById('image-List-l');
 
 
-        var bComercial= false;
-        var bCartel= false;
-        var bCumple= false;
-        var bCamara= false;
-        var bExtrem= false;
-        var name = "";
-        var fill;
-        var cont = 0;
-        console.log(fill);
+//content
+let contCard = document.getElementById('card-cont-vuelo');
+let contExtremo = document.getElementById('card-cont-extremo');
+let contCamara = document.getElementById('card-cont-360');
+let contC = document.getElementById('card-cont-c');
+let contL  = document.getElementById('card-cont-l');
+//elementos de control
+let circleVuelo = document.getElementById('circle-vuelo');
+    //extremo
+let circleExtremo = document.getElementById('circle-extremo');
 
-        var tComercial="";
-        var tExtrem ="";
-        var tCamara ="";
-        var tCumple ="";
-        var tCartel ="";
-       
-        // 
+  //360
 
-        contDisplay.innerText = `Contador: ${cont}`;
-        comercial.addEventListener("click", function() {
-            if (!bComercial){
-                comercial.style.backgroundColor = "#ff7f00"; // Puedes ajustar el color según tus preferencias
-                bComercial=true;    
-                cont = cont + 180;
-                console.log(cont);
-                contDisplay.textContent = "TOTAL:" + cont;
-                tComercial= "Comercial";
-                fill = true;    
-                
-                
-            }else{
-                comercial.style.backgroundColor = "#272a2f";
-                bComercial= false;
-                cont = cont - 180;
-                console.log(cont);
-                contDisplay.textContent = "TOTAL:" + cont;
-                fill= false;    
-                tComercial= "";
-             
-            }
-            
-        }); 
-
-        
-        extrem.addEventListener("click", function() {
-           
-            if (!bExtrem){
-                extrem.style.backgroundColor = "#ff7f00"; // Puedes ajustar el color según tus preferencias
-                bExtrem=true;
-                cont = cont + 50;
-                contDisplay.textContent = "TOTAL:" + cont;
-                tExtrem = "Con Extremo ";
-                
-            }else{
-                extrem.style.backgroundColor = "#272a2f";
-                bExtrem= false;
-                cont = cont - 50;
-                contDisplay.textContent = "TOTAL:" + cont;
-                
-                tExtrem = "";
-            }
-            
-        });
-        camara.addEventListener("click", function() {
-            if (!bCamara){
-                camara.style.backgroundColor = "#ff7f00"; // Puedes ajustar el color según tus preferencias
-                bCamara=true;
-                cont = cont + 40;
-                contDisplay.textContent = "TOTAL:" + cont;
-                tCamara = "Con camara 360°";
-            }else{
-                camara.style.backgroundColor = "#272a2f";
-                bCamara= false;
-                cont = cont - 40;
-                contDisplay.textContent = "TOTAL:" + cont;
-                tCamara =  "";
-            }
-            
-        });
-
-        // Agregar un listener para el evento de clic
-        cumple.addEventListener("click", function() {
-            if (!bCumple){
-                cumple.style.backgroundColor = "#ff7f00"; // Puedes ajustar el color según tus preferencias
-                bCumple=true;
-                cont = cont + 40;
-                contDisplay.textContent = "TOTAL:" + cont;
-                tCumple = "incluye Paste ";
-            }else{
-                cumple.style.backgroundColor = "#272a2f";
-                bCumple= false;
-                cont = cont - 40;
-                contDisplay.textContent = "TOTAL:" + cont;
-                tCumple = "";
-            }
-            
-        }); 
-      
-        cartel.addEventListener("click", function() {
-            if (!bCartel){
-                cartel.style.backgroundColor = "#ff7f00"; // Puedes ajustar el color según tus preferencias
-                bCartel=true;
-                cont= cont + 40;
-                contDisplay.textContent = "TOTAL:" + cont;
-                tCartel = "Cartel de: " + "amor";
-            }else{
-                cartel.style.backgroundColor = "#272a2f";
-                cont= cont - 40;
-                bCartel= false;
-                contDisplay.textContent = "TOTAL:" + cont;
-                tCartel = "";
-            }
-            
-        }); 
-        console.log(cont);
-        
-
-
-
-function fillField(){
-        var fillName = document.getElementById("lname").value;
-        console.log(fill);
-        
-        // Verificar si el campo está lleno 
-    if(fill){
-        if (fillName !== '') {
-            openWhatsappReserve();
-          } else {
-            alert('Escriba su nombre en el campo nombre');
-          }
-    }else{
-        alert("selecciona la Carta Comercial para poder reservar");
-    }
-      
+  let circleCamara = document.getElementById('circle-360');
+//celebracion
+let circleC = document.getElementById('circle-c');
+//letrero
+let circleL = document.getElementById('circle-l');
+function showImages() {
+    imageContainer.style.display = 'flex';
+    circleVuelo.style.display = 'none';
+    
+    contCard.style.justifyContent = 'space-between';
 }
 
-function openWhatsappReserve(){
-    var numero = "+573205181852";
-    var menssage = "Hola soy: ";
-    var menssageCo= encodeURIComponent(menssage);
-    var linkWhatsapp = 'https://wa.me/' + numero + "?text=" + menssageCo + document.getElementById("lname").value 
-    +" "+ "Tipo de Vuelo:" + tComercial +" "+tExtrem+ " " +tCamara+" "+tCumple+" "+tCartel+" Costo: "+cont+" Por: Andres Castillo(Web)";
-    window.open(linkWhatsapp);
+function hideImages() {
+     imageContainer.style.display = 'none';
+   
+   contCard.style.justifyContent = 'space-around';
+    circleVuelo.style.display = 'flex';
+
+ 
+}
+
+function showImagesExtremo() {
+    imageExtremo.style.display = 'flex';
+    circleExtremo.style.display = 'none';
+    contExtremo.style.justifyContent = 'space-between';
+   
+   
+}
+
+function hideImagesExtremo() {
+    imageExtremo.style.display = 'none';
+    circleExtremo.style.display = 'flex';
+    contExtremo.style.justifyContent = 'space-around';
+
 
 }
+
+
+function showImages360() {
+    imageCamara.style.display = 'flex';
+    circleCamara.style.display = 'none';
+    contCamara.style.justifyContent = 'space-between';
+}
+
+function hideImages360() {
+    imageCamara.style.display = 'none';
+    circleCamara.style.display = 'flex';
+    contCamara.style.justifyContent = 'space-around';
+
+}
+function showImagesC() {
+    imageC.style.display = 'flex';
+    circleC.style.display = 'none';
+    contC.style.justifyContent = 'space-between';
+}
+
+function hideImagesC() {
+    imageC.style.display = 'none';
+    circleC.style.display = 'flex';
+    contC.style.justifyContent = 'space-around';
+
+}
+function showImagesL() {
+    imageL.style.display = 'flex';
+    circleL.style.display = 'none';
+    contL.style.justifyContent = 'space-between';
+}
+
+function hideImagesL() {
+    imageL.style.display = 'none';
+    circleL.style.display = 'flex';
+    contL.style.justifyContent = 'space-around';
+
+}
+
+
