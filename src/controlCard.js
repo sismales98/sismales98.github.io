@@ -25,7 +25,7 @@ let circleC = document.getElementById('circle-c');
 //letrero
 let circleL = document.getElementById('circle-l');
 function showImages() {
-    imageContainer.style.display = 'flex';
+    imageContainer.style.display = 'contents';
     circleVuelo.style.display = 'none';
     
     contCard.style.justifyContent = 'space-between';
@@ -41,7 +41,7 @@ function hideImages() {
 }
 
 function showImagesExtremo() {
-    imageExtremo.style.display = 'flex';
+    imageExtremo.style.display = 'contents';
     circleExtremo.style.display = 'none';
     contExtremo.style.justifyContent = 'space-between';
    
@@ -58,7 +58,7 @@ function hideImagesExtremo() {
 
 
 function showImages360() {
-    imageCamara.style.display = 'flex';
+    imageCamara.style.display = 'contents';
     circleCamara.style.display = 'none';
     contCamara.style.justifyContent = 'space-between';
 }
@@ -70,7 +70,7 @@ function hideImages360() {
 
 }
 function showImagesC() {
-    imageC.style.display = 'flex';
+    imageC.style.display = 'contents';
     circleC.style.display = 'none';
     contC.style.justifyContent = 'space-between';
 }
@@ -82,7 +82,7 @@ function hideImagesC() {
 
 }
 function showImagesL() {
-    imageL.style.display = 'flex';
+    imageL.style.display = 'contents';
     circleL.style.display = 'none';
     contL.style.justifyContent = 'space-between';
 }
