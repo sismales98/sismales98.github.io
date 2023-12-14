@@ -41,8 +41,8 @@ h1,h2,h3,h4{
 }
 .card{
   
-    width:250px;
-    height: 355px;
+    width: 287px;
+    height: 400px;
     
     align-items: center;
     justify-content: space-between;
@@ -151,8 +151,18 @@ li span{
 .text-icon h2{
     color: black;
     margin: 10px 20px 10px 20px;
+    font-weight: 700;
+}
+.text-header-white{
+    font-size: x-large;
+    font-weight: 700;
 }
 
+.btn-header-text{
+    font-family: cursive;
+    font-size: 28px;
+    font-weight: bold;
+}
 .nav-list{
     display: flex;
     align-items: center;
@@ -169,8 +179,9 @@ li span{
 .nav-list li a{
    color: white;
    font-size: large;
-   margin-left:20px ;
-   margin-right: 20px;
+   margin-left: 60px;
+   font-weight: 800;
+   margin-right: 60px;
 }
 .nav-list li a:hover{
     color: #ff7f00;
@@ -179,6 +190,7 @@ li span{
  .color-black{
     background-color: black;
     width: 50%;
+    font-size: x-large;
 
  }
 
@@ -206,11 +218,11 @@ li span{
     flex-wrap: wrap;
  }
  .font-zise-h1{
-    font-size: 100px;
+    font-size: 120px;
  }
 
  .btn-cta:hover{
-    width: 320px;
+    color: white;
     height: 75px;   
 }
  .btn-card:hover{
@@ -293,11 +305,19 @@ footer{
     width: 1px;
     background: white;
 }
-
+.incluye-text{
+       font-weight: 700;
+}
+.content-card-text{
+    font-weight: 650;
+}
+.price-card{
+    font-weight: 650;
+}
 .hr-footer{
     background-color: #fe7e00;
     height: 2px !important;
-    width: 315px;
+    width: 773px;
     margin: 0;
 }
 .hr-footer-c{
@@ -387,15 +407,7 @@ footer{
         padding:40px;
     };
   }
- 
-@media (min-width:1000px){
-    header{
-       height: 85vh;
-    }  
-   
 
-
-}
 .input-name label{
     color: #fe7e00;
 }
@@ -451,4 +463,14 @@ footer{
     background-color: #00000057;
     border-radius: 50%;
     font-size: small;
+}
+
+.card-text-title{
+        font-weight: bold;
+        font-size: xx-large;
+        font-style: oblique;
+}
+
+.footer-contact{
+ font-size: x-large;
 }
