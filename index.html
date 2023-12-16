@@ -4,7 +4,9 @@
     <meta charset="UTF-8" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css.map" > -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="src/index.js"></script>
   
@@ -50,19 +52,19 @@
             <div class="container container-social ">
                 <ul class="navbar-nav nav-social">
                     <li class="nav-item">
-                        <i class="fa fa-instagram"></i>
+                        <i class="fa-brands fa-instagram"></i>
                         
                     </li>
                     <li class="nav-item">
-                        <i class="fa fa-facebook"></i>
+                        <i class="fa-brands fa-facebook"></i>
                         
                     </li>
                     <li class="nav-item">
-                        <i class="fa fa-youtube"></i>
+                        <i class="fa-brands fa-youtube"></i>
                       
                     </li>
                     <li class="nav-item">
-                        <i class="fa fa-google"></i>
+                        <i class="fa-brands fa-google"></i>
                        
                     </li>
                 </ul>
@@ -122,10 +124,10 @@
                         <li class="nav-item">
                         <div class="card" id="card-vuelo" onmouseover="showImages()" onmouseout="hideImages()">
                             <div class="w3-content w3-display-container image-list" id="image-List">
-                                <img class="mySlides" src="style/img/vuelo/img-v1.JPG" style="width:100%">
-                                <img class="mySlides" src="style/img/vuelo/img-v2.JPG" style="width:100%">
-                                <img class="mySlides" src="style/img/vuelo/img-v3.JPG" style="width:100%">
-                                <img class="mySlides" src="style/img/vuelo/img-v4.JPG" style="width:100%">
+                                <img class="mySlides" src="style/img/vuelo/img-v2.JPG" style="width:100%;filter:grayscale(1);">
+                                <img class="mySlides" src="style/img/vuelo/img-v1.JPG" style="width:100%;filter:grayscale(1);">
+                                <img class="mySlides" src="style/img/vuelo/img-v3.JPG" style="width:100%;filter:grayscale(1);">
+                                <img class="mySlides" src="style/img/vuelo/img-v4.JPG" style="width:100%;filter:grayscale(1);">
                               
                                 <button class="button-slider-img w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
                                 <button class="button-slider-img w3-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
@@ -139,7 +141,7 @@
                               <div id="card-cont-vuelo" class="card-cont"> 
                                 <h3 class="card-text-title">Vuelo</h3>
                                 <div class="circle" id="circle-vuelo">
-                                    <span><i class="fa fa-plane"></i></span>
+                                    <span><i class="fa fa-paper-plane"></i></span>
                                 </div>  
                                
                                 <div style="display: flex;
@@ -147,10 +149,8 @@
                                 flex-direction: column;
                                 align-items: center;">
                                     <div class="content-card" id="content-card-vuelo">
-                                        <span class="incluye-text">incluye:</span>
-                                        <p class="content-card-text">transporte</p>
-                                        <p class="content-card-text">fotos camara</p>
-                                        <p class="content-card-text">vuelo entre 10 a 18 minutos</p>
+                                        <span class="incluye-text">Disfruta La Aventura</span>
+                                        <p class="content-card-text">La actividad incluye fotos,polliza,transporte y una buena experiencia</p>
                                     </div>
                                     <h4 class="price-card">$180.000</h4>
                                     <button onclick="openContainer()" class="btn btn-card btn-orange"  type="button">RESERVA</button>
@@ -166,14 +166,14 @@
                         <li class="nav-item">
                             <div class="card" id="card-extremo" onmouseover="showImagesExtremo()" onmouseout="hideImagesExtremo()">
                                 <div class="image-list" id="image-List-extremo">
-                                    <video width="350" height="440" alt="Imagen 1" autoplay muted loop>
+                                    <video width="350" height="440" alt="Imagen 1" style="width:100%;filter: grayscale(1);" autoplay muted loop>
                                         <source   src="style/img/extremo/Video-360.mp4" type="video/mp4">
                                     </video>
                                   </div>
                                   <div id="card-cont-extremo" class="card-cont"> 
                                     <h3 class="card-text-title">Vuelo Extremo</h3>
                                     <div class="circle" id="circle-extremo">
-                                        <span><i class="fa fa-plane"></i></span>
+                                        <span><i class="fas fa-hurricane"></i></span>
                                     </div>  
                                    
                                     <div style="display: flex;
@@ -181,7 +181,7 @@
                                     flex-direction: column;
                                     align-items: center;">
                                         <div class="content-card" id="content-card-extremo">
-                                            <span class="incluye-text">incluye:</span>
+                                            <span class="incluye-text">Nuevas Sensaciones</span>
                                             <p class="content-card-text">disfruta un vuelo extremo como los wings over</p>
                                            
                                         </div>
@@ -198,17 +198,18 @@
                         </li>
                     </ul>    
                 </div>
+                
                 <div class="table-add">
                     <ul class="navbar-nav card-list">
                         <li class="nav-item">
                             <div class="card" id="card-vuelo-360" onmouseover="showImages360()" onmouseout="hideImages360()">
                                 <div class="w3-content w3-display-container image-list" id="image-List-360">
-                                    <video class="mySlidesExtremo" width="250" height="440" alt="Imagen 1" autoplay muted loop>
-                                        <source   src="style/img/360/Video-360-1.mp4" type="video/mp4">
+                                    <video class="mySlidesExtremo" style="width:100%;filter: grayscale(1);" width="250" height="440" alt="Imagen 1" autoplay muted loop>
+                                        <source   src="style/img/360/Video-360-1.mp4 "  type="video/mp4">
                                     </video>
-                                    <img class="mySlidesExtremo" src="style/img/360/img-360-1.jpg" style="width:100%">
-                                    <img class="mySlidesExtremo" src="style/img/360/img-360-2.jpg" style="width:100%">
-                                    <img class="mySlidesExtremo" src="style/img/360/img-360-3.jpg" style="width:100%">
+                                    <img class="mySlidesExtremo" src="style/img/360/img-360-1.jpg" style="width:100%;filter: grayscale(1);">
+                                    <img class="mySlidesExtremo" src="style/img/360/img-360-2.jpg" style="width:100%;filter: grayscale(1);">
+                                    <img class="mySlidesExtremo" src="style/img/360/img-360-3.jpg" style="width:100%;filter: grayscale(1);">
                                   
                                     <button class="button-slider-img w3-button w3-display-left" onclick="plusDivsE(-1)">&#10094;</button>
                                     <button class="button-slider-img w3-button w3-display-right" onclick="plusDivsE(1)">&#10095;</button>
@@ -222,7 +223,7 @@
                                   <div id="card-cont-360" class="card-cont"> 
                                     <h3 class="card-text-title">Registro 360</h3>
                                     <div class="circle" id="circle-360">
-                                        <span><i class="fa fa-plane"></i></span>
+                                        <span><i class="fa fa-globe"></i></span>
                                     </div>  
                                    
                                     <div style="display: flex;
@@ -230,7 +231,7 @@
                                     flex-direction: column;
                                     align-items: center;">
                                         <div class="content-card" id="content-card-360">
-                                            <span class="incluye-text">incluye:</span>
+                                            <span class="incluye-text">Panorama completo</span>
                                             <p class="content-card-text">Registro de Camaras 360 Max y Fusion de go pro</p>
                                            
                                         </div>
@@ -248,8 +249,9 @@
                         <li class="nav-item">
                             <div class="card" id="card-celebracion" onmouseover="showImagesC()" onmouseout="hideImagesC()">
                                 <div class="w3-content w3-display-container image-list" id="image-List-c">
-                                    <img class="mySlidesC" src="style/img/celebration/celebration-1.jpg" style="width:100%">
-                                    <img class="mySlidesC" src="style/img/celebration/celebration-2.webp" style="width:100%">
+                                    <img class="mySlidesC" src="style/img/celebration/celebration-2.webp" style="width:100%;filter: grayscale(1);">
+                                    <img class="mySlidesC" src="style/img/celebration/celebration-1.jpg" style="width:100%;filter: grayscale(1);">
+                                    
                                  
                                   
                                     <button class="button-slider-img w3-button w3-display-left" onclick="plusDivsC(-1)">&#10094;</button>
@@ -264,7 +266,7 @@
                                   <div id="card-cont-c" class="card-cont"> 
                                     <h3 class="card-text-title">Celebraciones</h3>
                                     <div class="circle" id="circle-c">
-                                        <span><i class="fa fa-plane"></i></span>
+                                        <span><i class="fa fa-cake"></i></span>
                                     </div>  
                                    
                                     <div style="display: flex;
@@ -272,10 +274,8 @@
                                     flex-direction: column;
                                     align-items: center;">
                                         <div class="content-card" id="content-card-c">
-                                            <span class="incluye-text">incluye:</span>
-                                            <p class="content-card-text">pastel</p>
-                                            <p class="content-card-text">bombas</p>
-                                            <p class="content-card-text">ramos de flores</p>
+                                            <span class="incluye-text">Muchos Tipos</span>
+                                            <p class="content-card-text">Celebra el momento especial con decoraciones y pasteles</p>
                                         </div>
                                         <h4 class="price-card">+$40.000</h4>
                                         <button onclick="openContainer()" class="btn btn-card btn-orange"  type="button">RESERVA</button>
@@ -291,10 +291,10 @@
                         <li class="nav-item">
                             <div class="card" id="card-vuelo-L" onmouseover="showImagesL()" onmouseout="hideImagesL()">
                                 <div class="w3-content w3-display-container image-list" id="image-List-l">
-                                    <img class="mySlidesL" src="style/img/Letrero/letrero-1.jpeg" style="width:100%">
-                                    <img class="mySlidesL" src="style/img/Letrero/letrero-2.webp" style="width:100%">
-                                    <img class="mySlidesL" src="style/img/Letrero/letrero-3.jpg" style="width:100%">
-                                    <img class="mySlidesL" src="style/img/Letrero/letrero-4.webp" style="width:100%">
+                                    <img class="mySlidesL" src="style/img/Letrero/letrero-3.jpg" style="width:100%;filter: grayscale(1);">
+                                    <img class="mySlidesL" src="style/img/Letrero/letrero-1.jpeg" style="width:100%;filter: grayscale(1);">
+                                    <img class="mySlidesL" src="style/img/Letrero/letrero-2.webp" style="width:100%;filter: grayscale(1);">
+                                    <img class="mySlidesL" src="style/img/Letrero/letrero-4.webp" style="width:100%;filter: grayscale(1);">
                                   
                                     <button class="button-slider-img w3-button w3-display-left" onclick="plusDivsL(-1)">&#10094;</button>
                                     <button class="button-slider-img w3-button w3-display-right" onclick="plusDivsL(1)">&#10095;</button>
@@ -308,7 +308,7 @@
                                   <div id="card-cont-l" class="card-cont"> 
                                     <h3 class="card-text-title">Letreros</h3>
                                     <div class="circle" id="circle-l">
-                                        <span><i class="fa fa-plane"></i></span>
+                                        <span><i class="fa fa-gifts"></i></span>
                                     </div>  
                                    
                                     <div style="display: flex;
@@ -316,11 +316,8 @@
                                     flex-direction: column;
                                     align-items: center;">
                                         <div class="content-card" id="content-card-l">
-                                            <span class="incluye-text">incluye:</span>
-                                            <p class="content-card-text">Feliz Cumpleaños</p>
-                                            <p class="content-card-text">Quieres ser mi novi@</p>
-                                            <p class="content-card-text">Te amo</p>
-                                            <p class="content-card-text">Feliz Aniversario</p>
+                                            <span class="incluye-text">Muchas Frases</span>
+                                            <p class="content-card-text">Frases como feliz cumpleaños,aniversario,te amo etc...</p>
                                         </div>
                                         <h4 class="price-card">+$40.000</h4>
                                         <button onclick="openContainer()" class="btn btn-card btn-orange"  type="button">RESERVA</button>
@@ -393,27 +390,20 @@
                         <div class="card-about">
                             <h2 class="title-card-about">¿DONDE VOLAMOS ?</h2>
                             <div class="ubicacion-blogs">
-                                <i class="fa fa-map-marker"></i><span class="title-blogs">Calarca</span>
+                                <i class="fa-solid fa-location-dot"></i><span class="title-blogs">Calarca</span>
                             </div>
                             <div style="display: flex; flex-direction: row;">
-                                <p>asdasdsadasdsadasdaasdsadasd asdasdasdasdasdsad adasdasdasdasdsada sdsaadasdasdasdd sdasdasdsadadasda sdasdasdsad asdsaadasdasdasdd sdasdasdsadadasdasdasdas dsadasdsaadasdasdasdd
-                                   
-                                </p>
+                                <p>Calarcá es un municipio colombiano perteneciente al departamento del Quindío. Es el segundo municipio con mayor cantidad de habitantes del departamento</p>
                                 <img class="about-img" src="style/img/ubicacion/21147364511_1f505389b9_b.jpg" style="filter: grayscale(100%);" alt="">  
                             </div>
                           
                           
                           
                                 <div class="ubicacion-blogs">
-                                    <i class="fa fa-map-marker"></i><span class="title-blogs">Buena Vista</span>
+                                    <i class="fa-solid fa-location-dot"></i><span class="title-blogs">Buenavista (Quindío)</span>
                                 </div>
                                 <div style="display: flex; flex-direction: row;">
-                                    <p>asdasdsadasdsadasdaa sdsadasdasdasda sdasdassdsadasds adasdaasdsadasd
-                                        sdasdasdasdasdsada dasdasdasd asdsadasdsaadasdaasdda sdasdsadasdsaadasdasdasdda
-                                       
-                                       
-                                       
-                                    </p>
+                                    <p>Buenavista es un municipio del departamento de Quindío en Colombia. Está ubicado a 27 km de Armenia, capital del departamento.</p> 
                                     <img class="about-img" src="style/img/ubicacion/21147364511_1f505389b9_b.jpg" style="filter: grayscale(100%);" alt="">  
                                 </div>
                               
@@ -428,7 +418,7 @@
                         <div class="card-about">
                             <h2 class="title-card-about">PUNTO DE ENCUENTRO</h2>
                             <div class="ubicacion-blogs">
-                                <i class="fa fa-map-marker" style="height: 100px;"></i><span>Columpios</span>
+                                <i class="fa-solid fa-location-dot"></i><span>Columpios</span>
                             </div>
                             <ul class="navbar-nav list-about-img">
                                 <li class="nav-item ">
@@ -507,7 +497,7 @@
                         <h2 class="footer-contact" style="color: #ff7f00;">CONTACTO</h4>
                         <ul class="navbar-nav navbar-whatsapp">
                             <li class="nav-item">
-                                <i class="fa fa-whatsapp footer-contact"><span>+57 3131111111</span></i>
+                                <i class="fa-brands fa-whatsapp footer-contact"><span>+573205181852</span></i>
                                 
                             </li>
                             <!-- <li class="nav-item">
@@ -549,16 +539,16 @@
                 <div class="container ">
                             <ul class="navbar-nav nav-social">
                                 <li class="nav-item">
-                                    <i class="fa fa-instagram"></i>
+                                    <i class="fa-brands fa-instagram"></i>
                                 </li>
                                 <li class="nav-item">
-                                    <i class="fa fa-facebook"></i>
+                                    <i class="fa-brands fa-facebook"></i>
                                 </li>
                                 <li class="nav-item">
-                                    <i class="fa fa-youtube"></i>
+                                    <i class="fa-brands fa-youtube"></i>
                                 </li>
                                 <li class="nav-item">
-                                    <i class="fa fa-google"></i>
+                                    <i class="fa-brands fa-google"></i>
                                 </li>
                             </ul>
                 </div>
