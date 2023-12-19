@@ -10,6 +10,8 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 h1,h2,h3,h4{
@@ -89,8 +91,9 @@ section{
     /* padding: 10px; */
     padding-right: 10px;
 }
-
-
+ *,p{
+    font-family: 'AlternateGotNo3D', sans-serif;
+} 
 .content-card p{
     margin: -2px;
     color: white;
@@ -153,11 +156,13 @@ li span{
 .text-icon h2{
     color: black;
     margin: 10px 20px 10px 20px;
+    font-size: xxx-large;
     font-weight: 700;
+    font-family: 'AlternateGotNo3D', sans-serif;
 }
 .text-header-white{
     font-size: x-large;
-    font-weight: 700;
+    
 }
 
 .btn-header-text{
@@ -177,12 +182,14 @@ li span{
 .container-nav-text{
     justify-content: center !important;
 }
-.nav-list li a{
-   color: white;
-   font-size: large;
-   margin-left: 60px;
-   font-weight: 800;
-   margin-right: 60px;
+.container-nav-text .nav-list li a{
+    color: white;
+    font-size: xx-large;
+    margin-left: 50px;
+    /* font-weight: 800; */
+    margin-top: -20px;
+    margin-bottom: -20px;
+    margin-right: 50px;
 }
 .nav-list li a:hover{
     color: #ff7f00;
@@ -205,9 +212,18 @@ li span{
     align-items: center;
     justify-content: center;
  }
-
+ .header-font{
+    font-size: xx-large !important;
+ }
  .header-left{
     margin: 10px;
+ }
+ .header-left h2{
+    font-size: xx-large;
+ }
+ .header-left h5{
+    font-size: 30px;
+    color: white;
  }
  .header-ritgh{
     margin: 10px;
@@ -220,7 +236,9 @@ li span{
 
  }
  .font-zise-h1{
-    font-size: 120px;
+    margin-top: -40px;
+    font-size: 150px;
+    margin-bottom: -20px;
  }
 
  .btn-cta:hover{
@@ -299,7 +317,7 @@ footer{
     background-color: #fe7e00;
 }
 .svg-banck{
- height: 30px;
+ height: 20px;
 }
 .container-footer-top{
     display: flex;
@@ -322,7 +340,7 @@ footer{
     background: white;
 }
 .incluye-text{
-       font-weight: 700;
+       font-weight: 500;
 }
 .content-card-text{
     font-weight: 650;
@@ -427,7 +445,7 @@ footer{
    
     header{
         height: 100%;
-        padding:40px;
+      
     };
   }
 
@@ -526,7 +544,12 @@ footer{
    
     height: 25px;
 }
-
+.ubicacion-blogs i{
+    font-size: x-large;
+}
+.ubicacion-blogs span{
+    margin-left: 10px;
+}
 .ubicacion-blogs .fa{
     font-size: x-large;
     margin-right: 10px;
@@ -550,3 +573,7 @@ footer{
 .scale-grey{
     filter: grayscale(1);
 }
+.btn{
+    border-radius: 0px;
+}
+
