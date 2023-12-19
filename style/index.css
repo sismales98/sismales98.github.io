@@ -61,9 +61,10 @@ section{
     padding: 20px;
 }
 .btn-orange{
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.446);
     border-color: #ff7f00;
     border-width: 2px;
+
 }
 .circle{
     background-color: #fe7e00;
@@ -95,15 +96,19 @@ section{
     font-family: 'AlternateGotNo3D', sans-serif;
 } 
 .content-card p{
-    margin: -2px;
+    margin: 0px;
     color: white;
     font-size: smaller;
     font-weight: 500;
+    background-color: #00000074;
+    background-size: contain;
 }
 .content-card span{
     font-size: large;
     color: white;
+    background-color: #00000057;
 }
+
 .btn-card{
     position: relative;
    
@@ -347,6 +352,7 @@ footer{
 }
 .price-card{
     font-weight: 650;
+    background-color: #00000053;
 }
 .hr-footer{
     background-color: #fe7e00;
@@ -408,7 +414,7 @@ footer{
    
 }
 .title-card-about{
-    background-color: #000000;
+    background-color: #0000006a;
     width: 100%;
 }
 
