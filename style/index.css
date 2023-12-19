@@ -198,11 +198,11 @@ li span{
 .container-nav-text .nav-list li a{
     color: white;
     font-size: xx-large;
-    margin-left: 50px;
+    margin-left: 10px;
     /* font-weight: 800; */
     margin-top: -20px;
     margin-bottom: -20px;
-    margin-right: 50px;
+    margin-right: 10px;
 }
 .nav-list li a:hover{
     color: #ff7f00;
@@ -422,7 +422,7 @@ footer{
    
 }
 .title-card-about{
-    background-color: #0000006a;
+    background-color: #000000;
     width: 100%;
 }
 
@@ -454,7 +454,7 @@ footer{
 
 
 
-@media (max-width: 930px) {
+@media (min-width: 930px) {
     /* … */
    
     header{
@@ -462,8 +462,8 @@ footer{
       
     }
     .container-nav-text .nav-list li a {
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
     }
   }
 
