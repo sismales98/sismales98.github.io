@@ -7,13 +7,3 @@ function openWhatsapp(){
 
 }
 
-function openContainer(){
-
-    document.getElementById("buy-pop").style.display = "block";
-}
-
-
-function closePop(){
-    document.getElementById("buy-pop").style.display = "none";
-}
-
