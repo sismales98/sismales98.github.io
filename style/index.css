@@ -45,7 +45,8 @@ h1,h2,h3,h4{
   
     width: 245px;
     height: 357px;
-    
+    margin-top: 10px;
+    margin-bottom: 10px;
     align-items: center;
     justify-content: space-between;
     position: relative;
@@ -446,13 +447,17 @@ footer{
 
 
 
-@media (min-width: 930px) {
+@media (max-width: 930px) {
     /* … */
    
     header{
         height: 100%;
       
-    };
+    }
+    .container-nav-text .nav-list li a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
   }
 
 .input-name label{
