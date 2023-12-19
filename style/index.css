@@ -61,11 +61,18 @@ h1,h2,h3,h4{
 section{
     padding: 20px;
 }
+.control-angle{
+    display: flex;
+    flex-direction: column;
+}
 .btn-orange{
     background-color: rgba(0, 0, 0, 0.446);
     border-color: #ff7f00;
     border-width: 2px;
 
+}
+.fa-angles-down{
+    color: white;
 }
 .circle{
     background-color: #fe7e00;
