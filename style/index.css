@@ -235,7 +235,7 @@ li span{
     font-size: xx-large;
  }
  .header-left h5{
-    font-size: 30px;
+    font-size: 36px;
     color: white;
  }
  .header-ritgh{
@@ -365,7 +365,7 @@ footer{
 .hr-footer{
     background-color: #fe7e00;
     height: 2px !important;
-    width: 413px;
+    width: 73%;
     margin: 0;
 }
 .hr-footer-c{
