@@ -234,6 +234,12 @@ li span{
  .btn-read{
     color: white;
  }
+ .cloud{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+ }
 .btn-read:hover{
     color: #fff;
     background-color: #fe7e00;
