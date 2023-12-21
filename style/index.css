@@ -231,69 +231,15 @@ li span{
  .header-left{
     margin: 10px;
  }
- .montain{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    position: absolute;
-    top: 50px;
+ .btn-read{
+    color: white;
  }
- .montain-left{
-
-    display: flex;
- }
- .montain-reitgh{
-    display: flex;
- }
- .back-montain-reitgh{
-    height: 246px;
-    position: absolute;
-    background-color:#fe7e00;
-    width: 3px;
-    z-index: 100;
-    transform: rotate(315deg);
- }
- .triangle-montian-litle-reitgh{
-    width: 0;
-    height: 0;
-    border: 2px solid #ffffff; 
-    border-right: 80px solid transparent;
-    border-top: 80px solid transparent;
-    border-left: 80px solid transparent;
-    border-bottom: 80px solid #000000;
- }
- .triangle-montian {
-    width: 0;
-    height: 0;
-    border-right: 100px solid transparent;
-    border-top: 100px solid transparent;
-    border-left: 100px solid transparent;
-    border-bottom: 100px solid #000000;
-
-}
-.back-montain{
-    height: 246px;
-    position: absolute;
+.btn-read:hover{
+    color: #fff;
     background-color: #fe7e00;
-    width: 3px;
-    left: 121px;
-    z-index: 100;
-    transform: rotate(315deg);
-  
+    border-color: #000000;
 }
-.triangle-montian-litle{
-    width: 0;
-    height: 0;
-    border: 2px solid #ffffff; 
-    border-right: 80px solid transparent;
-    border-top: 80px solid transparent;
-    border-left: 80px solid transparent;
-    border-bottom: 80px solid #000000;
-    top: 50px;
-    left: 136px;
-    position: absolute;
 
-}
  .header-left h2{
     font-size: xx-large;
  }
@@ -303,6 +249,7 @@ li span{
  }
  .header-ritgh{
     margin: 10px;
+    border: 7px solid black;
  }
  .container-header{
     display: flex;
