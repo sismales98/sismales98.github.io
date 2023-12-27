@@ -599,6 +599,7 @@ p{
 .border-blogs{
     border: 3px solid black;
     background-color: #edecd8;
+    height: 92%;
 }
 
 .scale-grey{
