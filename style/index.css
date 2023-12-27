@@ -4,7 +4,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 107vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -43,8 +43,8 @@ h1,h2,h3,h4{
 }
 .card{
   
-    width: 245px;
-    height: 357px;
+    height: 423px;
+    width: 272px;
     margin-top: 10px;
     margin-bottom: 10px;
     align-items: center;
@@ -106,7 +106,7 @@ section{
 .content-card p{
     margin: 0px;
     color: white;
-    font-size: smaller;
+    font-size: medium;
     font-weight: 500;
     background-color: #00000074;
     background-size: contain;
@@ -179,7 +179,7 @@ li span{
 }
 
 .btn-header-text{
-    font-size: 28px;
+    font-size: 70px;
     font-weight: bold;
 }
 .nav-list{
@@ -215,16 +215,16 @@ li span{
 
  }
 
- .btn-cta{
+ .btn-cta {
     border-radius: 10px;
     border-color: rgb(0, 0, 0);
     border-width: 4px;
-    width: 300px;
-    height: 70px;
+    width: 514px;
+    height: 119px;
     display: flex;
     align-items: center;
     justify-content: center;
- }
+}
  .header-font{
     font-size: xx-large !important;
  }
@@ -233,6 +233,7 @@ li span{
  }
  .btn-read{
     color: white;
+    border: 2px solid transparent;
  }
  .cloud{
     position: absolute;
@@ -262,6 +263,7 @@ li span{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    height: 100%;
 
  }
  .font-zise-h1{
@@ -272,7 +274,8 @@ li span{
 
  .btn-cta:hover{
     color: white;
-    height: 75px;   
+    background-color: #fe7f00;
+  
 }
  .btn-card:hover{
     color: #ff7f00;
@@ -378,12 +381,7 @@ footer{
     font-weight: 650;
     background-color: #00000053;
 }
-.hr-footer{
-    background-color: #fe7e00;
-    height: 2px !important;
-    width: 73%;
-    margin: 0;
-}
+
 .hr-footer-c{
     background-color: #fe7e00;
     height: 2px !important;
@@ -470,23 +468,19 @@ footer{
 
 
 
-@media (min-width: 930px) {
-    /* … */
-   
-    header{
-        height: 100%;
-      
-    }
-    /* .container-nav-text .nav-list li a {
-        margin-left: 50px;
-        margin-right: 50px;
-    } */
-  }
-
 .input-name label{
     color: #fe7e00;
 }
 
+
+
+@media (min-width: 720px) {
+  
+    header{
+        justify-content: space-between;
+    }
+
+  }
 
 
 
@@ -562,6 +556,9 @@ footer{
  
     justify-content: space-between;
 }
+p{
+    font-size: larger;
+}
 
 .about-img .about-video {
     height: 100px;
@@ -609,5 +606,6 @@ footer{
 }
 .btn{
     border-radius: 0px;
+   
 }
 
