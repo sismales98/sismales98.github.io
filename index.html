@@ -63,10 +63,10 @@
                                   <a  class="nav-link"  href="#section-buy">TIENDA</a>
                               </li>
                               <li class="nav-item">
-                                  <a class="nav-link" href="#section-about">BLOGS</a>
+                                  <a class="nav-link" href="#section-about">INFORMACION</a>
                               </li>
                               <li class="nav-item">
-                                  <a class="nav-link" href="#section-about">PREGUNTAS</a>
+                                  <a class="nav-link" href="#question">PREGUNTAS</a>
                               </li>
                           </ul>
                       
@@ -80,20 +80,16 @@
             <div class="container container-social ">
                 <ul class="navbar-nav nav-social">
                     <li class="nav-item">
-                        <i class="fa-brands fa-instagram"></i>
-                        
+                        <a href="https://www.instagram.com/vuelaquindio/"><i class="fa-brands fa-instagram"></i></a>
                     </li>
                     <li class="nav-item">
-                        <i class="fa-brands fa-facebook"></i>
-                        
+                        <a href="https://www.facebook.com/profile.php?id=61554988646833"><i class="fa-brands fa-facebook"></i></a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <i class="fa-brands fa-youtube"></i>
-                      
-                    </li>
+                    </li> -->
                     <li class="nav-item">
-                        <i class="fa-brands fa-google"></i>
-                       
+                       <a href="mailto:vuelaquindio@gmail.com"><i class="fa-brands fa-google"></i></a> 
                     </li>
                 </ul>
             </div>
@@ -179,10 +175,10 @@
                                 align-items: center;">
                                     <div class="content-card" id="content-card-vuelo">
                                         <span class="incluye-text">Disfruta La Aventura</span>
-                                        <p class="content-card-text">La actividad incluye fotos,polliza,transporte y una buena experiencia</p>
+                                        <p class="content-card-text">La actividad incluye fotos,poliza,transporte y una buena experiencia</p>
                                     </div>
                                     <h4 class="price-card">$180.000</h4>
-                                    <button onclick="openWhatsappVuelo()" class="btn btn-card btn-orange"  type="button">RESERVA</button>
+                                    <button onclick="openWhatsapp()" class="btn btn-card btn-orange"  type="button">RESERVA</button>
     
                                 </div>
                               
@@ -215,7 +211,7 @@
                                            
                                         </div>
                                         <h4 class="price-card">$ +50.000</h4>
-                                        <button onclick="openWhatsappExtremo()" class="btn btn-card btn-orange"  type="button">RESERVA</button>
+                                        <button onclick="openWhatsapp()" class="btn btn-card btn-orange"  type="button">RESERVA</button>
         
                                     </div>
                                   
@@ -265,7 +261,7 @@
                                            
                                         </div>
                                         <h4 class="price-card">+$50.000</h4>
-                                        <button onclick="openWhatsapp360()" id="btn-reserva" class="btn btn-card btn-orange"  type="button">RESERVA</button>
+                                        <button onclick="openWhatsapp()" id="btn-reserva" class="btn btn-card btn-orange"  type="button">RESERVA</button>
         
                                     </div>
                                   
@@ -307,7 +303,7 @@
                                             <p class="content-card-text">Celebra el momento especial con decoraciones y pasteles</p>
                                         </div>
                                         <h4 class="price-card">+$40.000</h4>
-                                        <button onclick="openWhatsappCelebraciones()" class="btn btn-card btn-orange"  type="button">RESERVA</button>
+                                        <button onclick="openWhatsapp()" class="btn btn-card btn-orange"  type="button">RESERVA</button>
         
                                     </div>
                                   
@@ -349,7 +345,7 @@
                                             <p class="content-card-text">Frases como feliz cumpleaños,aniversario,te amo etc...</p>
                                         </div>
                                         <h4 class="price-card">+$40.000</h4>
-                                        <button onclick="openWhatsappLetreros()" class="btn btn-card btn-orange"  type="button">RESERVA</button>
+                                        <button onclick="openWhatsapp()" class="btn btn-card btn-orange"  type="button">RESERVA</button>
         
                                     </div>
                                   
@@ -417,7 +413,7 @@
                             </ul>
                           
                             <div class="button-about">
-                                <button type="button" class="btn button-black btn-read">Leer Mas!</button>
+                                <button type="button" onclick="openWhatsapp()" class="btn button-black btn-read">Leer Mas!</button>
                             </div>
                            
                         </div>  
@@ -459,7 +455,7 @@
                               
 
                             <div class="button-about">
-                                <button type="button" class="btn button-black btn-read">Leer Mas!</button>
+                                <button type="button" onclick="openWhatsapp()" class="btn button-black btn-read">Leer Mas!</button>
                             </div>
                            
                         </div>
@@ -485,13 +481,13 @@
                          
                            
                             <div class="button-about">
-                                <button type="button"  class="btn button-black btn-read">Leer Mas!</button>
+                                <button type="button" onclick="openWhatsapp()"  class="btn button-black btn-read">Leer Mas!</button>
                             </div>
                            
                         </div>
-                        <div class="card-about">
+                        <div class="card-about " id="question">
                             <div class="border-blogs">
-                                <h2 class="title-card-about">Preguntas</h2>
+                                <h2 class="title-card-about">PREGUNTAS</h2>
                                 <div style="display: flex;flex-direction: row;"> 
                                     <p>¿Cuanto dura una vuelo?-La duracion depende de los condiciones climaticas  , pero hay un promedio entre 12 a 20 min o mas...</p>
                                         <img class="about-img" src="style/img/preguntas/nubes_media_altura_pixabay.jpg" style="filter: grayscale(100%);" alt="">  
@@ -513,7 +509,7 @@
     
                                 </div>
                                 <div class="button-about">
-                                    <button type="button" class="btn button-black btn-read">Leer Mas!</button>
+                                    <button type="button" onclick="openWhatsapp()" class="btn button-black btn-read">Leer Mas!</button>
                                 </div>
                                
                             </div>
@@ -528,34 +524,35 @@
                 <div class="container container-nav-text ">
                     <ul class="navbar-nav nav-list footer-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">INICIO</a>
+                            <a class="nav-link" href="#header-content">INICIO</a>
                         </li>
                         <span class="line-nav"></span>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACTO</a>
+                            <a class="nav-link" href="#id-footer">CONTACTO</a>
                         </li>
                         <span class="line-nav"></span>
                         <li class="nav-item">
-                            <a  class="nav-link"  href="#">TIENDA</a>
+                            <a  class="nav-link"  href="#section-buy">TIENDA</a>
                         </li>
                         <span class="line-nav"></span>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT </a>
+                            <a class="nav-link" href="#section-about">INFORMACION</a>
                         </li>
                         <span class="line-nav"></span>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">PREGUNTAS </a>
+                            <a class="nav-link" href="#question">PREGUNTAS</a>
                         </li>
                     </ul>
-                    <hr class="hr-footer">  
+                   
                 </div>
                 <div class="container container-footer-top">
                     <div class="container">
                         <h2 class="footer-contact" style="color: #ff7f00;">CONTACTO</h4>
                         <ul class="navbar-nav navbar-whatsapp">
                             <li class="nav-item">
-                                <i class="fa-brands fa-whatsapp footer-contact"><span>+573205181852</span></i>
-                                
+                                <i class="fa-brands fa-whatsapp footer-contact"><span>+57 320 5181852</span></i>
+                                <i class="fa-brands fa-whatsapp footer-contact"><span>+57 315 2165049</span></i>
+                                <!-- <i class="fa-brands fa-whatsapp footer-contact"><span>+573205181852</span></i> -->
                             </li>
                             <!-- <li class="nav-item">
                                 <i class="fa fa-whatsapp"><span>+57 3132222222</span></i>
@@ -596,16 +593,16 @@
                 <div class="container ">
                             <ul class="navbar-nav nav-social">
                                 <li class="nav-item">
-                                    <i class="fa-brands fa-instagram"></i>
+                                    <a href="https://www.instagram.com/vuelaquindio/"><i class="fa-brands fa-instagram"></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <i class="fa-brands fa-facebook"></i>
+                                    <a href="https://www.facebook.com/profile.php?id=61554988646833"><i class="fa-brands fa-facebook"></i></a>
                                 </li>
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                     <i class="fa-brands fa-youtube"></i>
-                                </li>
+                                </li> -->
                                 <li class="nav-item">
-                                    <i class="fa-brands fa-google"></i>
+                                   <a href="mailto:vuelaquindio@gmail.com"><i class="fa-brands fa-google"></i></a> 
                                 </li>
                             </ul>
                 </div>
