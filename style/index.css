@@ -4,7 +4,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 107vh;
+    /* height: 98vw; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -100,9 +100,12 @@ section{
     /* padding: 10px; */
     padding-right: 10px;
 }
- *,p{
-    font-family: 'AlternateGotNo3D', sans-serif;
+ *,h2,h3,h4,h5{
+    font-family: 'Font', sans-serif ;
 } 
+.font{
+    font-family: 'Friday 13', sans-serif ;
+}
 .content-card p{
     margin: 0px;
     color: white;
@@ -158,18 +161,33 @@ li span{
 .container{
     margin: 10px;
 }
-
+.title-principal{
+    font-size: 12.5vw;
+    font-family:  'Friday 13', sans-serif;
+    color: black;
+}
 .text-icon{
     display: flex;
     background-color: #ff7f00;
     width: 100%;
     justify-content: center ;
 }
+@font-face {
+    font-family: 'Friday 13';
+    src: local('Friday 13'), url('../src/Friday13v12.ttf') format('truetype');
+    /* Ajusta la ruta según la ubicación de tu archivo de fuente */
+}
+@font-face {
+    font-family: 'Font';
+    src: local('Font'), url('../src/AlternateGotNo1D.ttf') format('truetype');
+    /* Ajusta la ruta según la ubicación de tu archivo de fuente */
+}
+
 
 .text-icon h2{
     color: black;
     margin: 10px 20px 10px 20px;
-    font-size: xxx-large;
+    font-size: 5.3vw;
     font-weight: 700;
     font-family: 'AlternateGotNo3D', sans-serif;
 }
@@ -179,7 +197,7 @@ li span{
 }
 
 .btn-header-text{
-    font-size: 70px;
+    font-size: 8vw;
     font-weight: bold;
 }
 .nav-list{
@@ -197,9 +215,9 @@ li span{
 }
 .container-nav-text .nav-list li a{
     color: white;
-    font-size: xx-large;
+    font-size: 3vw;
     margin-left: 10px;
-    /* font-weight: 800; */
+     font-weight: 800; 
     margin-top: -20px;
     margin-bottom: -20px;
     margin-right: 10px;
@@ -217,16 +235,18 @@ li span{
 
  .btn-cta {
     border-radius: 10px;
-    border-color: rgb(0, 0, 0);
+   
     border-width: 4px;
-    width: 514px;
-    height: 119px;
+  
+    height: 4vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: cambioColor 1s infinite;
+
 }
  .header-font{
-    font-size: xx-large !important;
+    font-size: 3vw !important;
  }
  .header-left{
     margin: 10px;
@@ -248,33 +268,38 @@ li span{
 }
 
  .header-left h2{
-    font-size: xx-large;
+    font-size: 4vw;
+    font-family: 'Friday 13', sans-serif;
  }
- .header-left h5{
-    font-size: 36px;
+ .header-left h5 {
+    font-size: 4vw;
     color: white;
+    font-family: 'Friday 13';
  }
  .header-ritgh{
     margin: 10px;
     border: 7px solid black;
  }
- .container-header{
+ .container-header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     height: 100%;
-
- }
+    flex-direction: column;
+}
  .font-zise-h1{
-    margin-top: -40px;
-    font-size: 150px;
-    margin-bottom: -20px;
+       /* margin-top: -13px; */
+       font-size: 19vw;
+       /* margin-bottom: -20px; */
+       font-family: 'Friday 13';
+       margin: 12px;
  }
 
  .btn-cta:hover{
     color: white;
     background-color: #fe7f00;
+    width: 100%;
   
 }
  .btn-card:hover{
@@ -333,7 +358,7 @@ footer{
     align-items: center;
 }
 .navbar-whatsapp span{
-    font-size: smaller;
+    font-size: 3vw;
     margin: 10px;
 }
 #section-buy{
@@ -342,14 +367,14 @@ footer{
 }
 .navbar-whatsapp i{
     color:white;
-   font-size: xx-large;
+   font-size: 3vw;
    margin: 10px;
 }
 .navbar-whatsapp i:hover{
     background-color: #fe7e00;
 }
 .svg-banck{
- height: 20px;
+ height: 2vw;
 }
 .container-footer-top{
     display: flex;
@@ -362,9 +387,9 @@ footer{
     justify-content: flex-start;
 }
 .footer-nav .nav-item .nav-link {
-    font-size: medium;
-    margin-right: 20px;
-    margin-left: 20px;
+    font-size: 1.5vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
 }
 .line-nav{
     height: 25px;
@@ -404,7 +429,7 @@ footer{
 .figure-about{
     background-color: #000000;
     height: 6px;
-    width: 300px;
+    width: 27vw;
 }
 
 .figure-about-c{
@@ -471,8 +496,20 @@ footer{
 .input-name label{
     color: #fe7e00;
 }
+/* 
+@media (max-width : 428px){
+    .text-icon h2{
+        font-size: x-large !important;
+      }
+      .card-about{
+        width: 401px;
+      }
+      .container-about {
+        display: none;
+      }
+   
 
-
+}
 
 @media (min-width: 720px) {
   
@@ -481,14 +518,190 @@ footer{
     }
 
   }
+  @media (max-width:544px){
+    .header-left{
+        display: none;
+    }
+    .header-ritgh{
+        width: 100%;
+        position: absolute;
+    }
+    .navbar-whatsapp span{
+        font-size: large !important;
+    }
+    .svg-banck{
+        height: 12px;
+    }
+
+  }
 
 
-
-  #image-list {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+  @media (max-width:810px) {
+  
+      .text-icon h2{
+    font-size: xx-large;
+  }
+  .container-footer-top{
+    flex-direction: column;
+  }
 }
+
+@media (max-width:710px) {
+    .container-nav-text .nav-list li a{
+        font-size: x-large;
+      }
+      .footer-nav .nav-item .nav-link{
+        font-size: smaller !important;
+      }
+      .container-nav-text{
+        display: none;
+      }
+
+}
+
+@media (max-width:920px){
+    
+    .figure-about{
+        width: 200px;
+    }
+    .footer-nav .nav-item .nav-link{
+        font-size: larger ;
+        margin-right: 10px;
+    margin-left: 10px;
+    }
+
+
+}
+@media (max-width:950px) {
+    .navbar-whatsapp span{
+        font-size: medium;
+    }
+    .footer-contact{
+        font-size: smaller !important;
+    }
+} */
+@media screen and (max-width: 450px){
+    .card-about{
+        width: 106vw;
+    }
+    .footer-contact{
+        font-size: 8vw !important;
+    }
+    .svg-banck{
+        height: 5vw;
+    }
+    .navbar-whatsapp span{
+        font-size: 6vw !important;
+    }
+    .navbar-whatsapp li{
+        text-align: center;
+    }
+   
+  
+}
+@media screen and (max-width: 577px){
+    .nav-android{
+        display: block;
+    }
+    .container-nav-text .nav-list li a{
+        font-size: 6vw;
+    }
+       
+}
+@media screen and (max-width: 600px) {
+    /* Estilos para pantallas pequeñas */
+    .border-blogs
+    .card-about{
+        width: 96vw;
+    }
+    .container-footer-top{
+        flex-direction: column;
+    }
+    .footer-nav{
+        display: none;
+    }
+    .header-left{
+        display: none;
+    }
+    .card{
+        width: 80vw;
+    }
+    footer{
+        padding: 0px;
+    }
+    .navbar-whatsapp span{
+        font-size: 4vw;
+    }
+   .about-img{
+        height: 19vw !important;
+        width: 19vw !important;
+   }
+   .about-img .about-video{
+        height: 19vw !important;
+        width: 19vw !important;
+   }
+   header{
+    height: 157vw;
+   }
+ 
+   .footer-contact{
+     font-size: 4vw;
+   }
+   .container-about{
+    display: none;
+   }
+
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Estilos para pantallas medianas */
+    .header-android{
+        display: none;
+    }
+    .navbar-whatsapp span{
+        font-size: 2.6vw;
+    }
+   
+  }
+  .title-android{
+    font-size: 25vw;
+  
+}
+.text-android{
+font-size: 6vw;
+background-color: #000000;
+padding: 2px;
+
+}
+  @media screen and (min-width: 1025px) {
+    /* Estilos para pantallas grandes */
+  
+    .header-android{
+        display: none;
+    }
+    .title-principal{
+        font-size: 10vw;
+    }
+    .text-icon h2{
+        font-size: 4vw;
+    }
+    .header-left h2{
+        font-size: 3vw;
+    }
+    .header-left h5{
+        font-size: 3vw;
+    }
+    .container-header{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .btn-header-text{
+        font-size: 4vw;
+    }
+    .header-ritgh{
+        width: 36vw;
+    }
+  }
 
 .card-cont {
     height: 100%;
@@ -541,13 +754,13 @@ footer{
 }
 
 .footer-contact{
- font-size: x-large;
+ font-size: 3.5vw;
 }
 
     .about-img{
-        height: 100px;
-        width: 100px;
-        margin: 10px;
+        height: 10vw;
+        width: 10vw;
+        margin: 1vx;
     }
 
 .list-about-img{
@@ -561,9 +774,9 @@ p{
 }
 
 .about-img .about-video {
-    height: 100px;
+    height: 10vw;
     object-fit: cover;
-    width: 109px;
+    width: 10vw;
 
 }
 
@@ -599,7 +812,7 @@ p{
 .border-blogs{
     border: 3px solid black;
     background-color: #edecd8;
-    height: 92%;
+ 
 }
 
 .scale-grey{
@@ -607,6 +820,23 @@ p{
 }
 .btn{
     border-radius: 0px;
-   
+   height: 100%;
 }
 
+.btn-policy:hover{
+    background-color: #000000;
+}
+
+
+
+@keyframes cambioColor {
+  
+    50% {
+        background-color: #fe7e00;
+        color: rgb(255, 255, 255);
+    }
+    100% {
+        background-color: black;
+        color: #fe7e00;
+    }
+}
