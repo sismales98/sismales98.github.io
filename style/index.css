@@ -69,6 +69,7 @@ section{
     background-color: rgba(0, 0, 0, 0.446);
     border-color: #ff7f00;
     border-width: 2px;
+    font-size: x-large;
     animation: luz 1s infinite;
 
 }
@@ -115,13 +116,13 @@ section{
 .content-card p{
     margin: 0px;
     color: white;
-    font-size: medium;
+    font-size: x-large;
     font-weight: 500;
     background-color: #00000074;
     background-size: contain;
 }
 .content-card span{
-    font-size: large;
+    font-size: x-large;
     color: white;
     background-color: #00000057;
 }
@@ -459,7 +460,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 450px;
+    /* width: 450px; */
     padding: 20px;
    
 }
@@ -767,7 +768,8 @@ padding: 2px;
     .about-img{
         height: 10vw;
         width: 10vw;
-        margin: 1vw;
+         margin: 1vw; 
+       
     }
 
 .list-about-img{
@@ -777,14 +779,14 @@ padding: 2px;
     justify-content: space-between;
 }
 p{
-    font-size: larger;
+    font-size: x-large;
 }
 
 .about-img .about-video {
     height: 10vw;
     object-fit: cover;
     width: 10vw;
-
+   
 }
 
 .ubicacion-blogs{
@@ -800,6 +802,7 @@ p{
 }
 .ubicacion-blogs span{
     margin-left: 10px;
+    font-size: x-large;
 }
 .ubicacion-blogs .fa{
     font-size: x-large;
