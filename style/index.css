@@ -302,12 +302,7 @@ li span{
        margin: 12px;
  }
 
- .btn-cta:hover{
-    color: white;
-    background-color: #fe7f00;
-    width: 100%;
-  
-}
+
  .btn-card:hover{
     color: #ff7f00;
  }
@@ -772,7 +767,7 @@ padding: 2px;
     .about-img{
         height: 10vw;
         width: 10vw;
-        margin: 1vx;
+        margin: 1vw;
     }
 
 .list-about-img{
@@ -843,7 +838,7 @@ p{
 
 @keyframes cambioColor {
   
-    50% {
+    0% {
         background-color: #fe7e00;
         color: rgb(255, 255, 255);
     }
