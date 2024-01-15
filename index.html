@@ -5,7 +5,7 @@
     <meta name="description" content="Reserva un vuelo en Parapente">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="icon" href="style/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Friday+13&display=swap">
+   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css.map" > -->
@@ -51,8 +51,8 @@
         </div>
         <nav class="navbar navbar-expand-sm navbar-black sticky-top"> 
             <div class="container-fuid control-angle">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-principal">
-                    <span ><i class="fa-solid fa-angles-down"></i></span>
+                <button id="toggleButton" class="navbar-toggler button-animation" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-principal">
+                    <span ><i id="button-change" class="fa-solid fa-angles-down"></i></span>
                   </button>
                   <div class="container container-nav-text collapse navbar-collapse" id="navbar-principal">
                     
@@ -155,6 +155,9 @@
         <main>
             
             <section id="section-buy" class="section-buy">
+                <div class="reservacion">
+                    <h2 class="font">Reservacion</h2>
+                </div>
                 <div class="table-buy">
                     
                     <ul class="navbar-nav card-list">
